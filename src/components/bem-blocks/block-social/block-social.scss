@@ -1,28 +1,55 @@
 .block-social {
+    margin-right: 2.5rem;
 
     /* .block-social__icons */
 
     &__icons {
+        margin-bottom: 0.7rem;
     }
 
     /* .block-social__item */
 
     &__item {
-
+        &+& {
+            margin-left: 1.5rem;
+        }
     }
 
     /* .block-social__link */
 
     &__link {
+    }
 
-        svg {
-            width: 3.2rem;
-            height: 3.2rem;
-        }
+    /* .block-social__link-icon */
+
+    &__link-icon {
+        width: 3.2rem;
+        height: 3.2rem;
     }
 
     /* .block-social__phone */
 
     &__phone {
+        font-size: 3.2rem;
+        font-weight: 500;
+        padding-left: 3rem;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            left: 0.3rem;
+            top: 0.3rem;
+            width: 1.6rem;
+            height: 1.6rem;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &:hover {
+            color: $orange;
+        }
     }
 }
+
+

@@ -1,4 +1,6 @@
 .block-phone {
+    margin-right: 4.4rem;
+
 
     /* .block-phone__text */
 
@@ -24,6 +26,10 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
+        }
+
+        &:hover {
+            color: $orange;
         }
     }
 }

@@ -1,20 +1,20 @@
 html {
-	box-sizing: border-box;
-	font-family: 'TTCommons', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-family: 'TTCommons', Arial, Helvetica, sans-serif;
     font-weight: 400;
-	font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html,
 body {
-	height: 100%;
-	position: relative;
+    height: 100%;
+    position: relative;
 }
 
 body {
@@ -41,22 +41,39 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0;
+    margin: 0;
 }
 
 button:focus,
 input:focus {
-	outline: transparent;
+    outline: transparent;
 }
 
 button {
-	@include no-btn;
+    @include no-btn;
 }
 
 .container {
     max-width: 120rem;
     margin: 0 auto;
     padding: 0 2rem;
+
+    @include media(1200px) {
+        max-width: 96rem;
+    }
+
+    @include media(960px) {
+        max-width: 76.8rem;
+    }
+
+    @include media(768px) {
+        max-width: 42.5rem;
+    }
+
+    @include media(425px) {
+        max-width: 32rem;
+        padding: 0 0.7rem;
+    }
 }
 
 .oh {
@@ -73,19 +90,24 @@ button {
 }
 
 .df {
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .dfsb {
     display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
+}
+
+.dfsa {
+    display: flex;
+    justify-content: space-around;
 }
 
 .dfac {
     display: flex;
-	align-items: center;
+    align-items: center;
 }
 
 a {
@@ -99,4 +121,20 @@ a {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $orange;
+    color: #fff;
+    width: 100%;
+    transition: all 0.3s;
+    line-height: 0;
+    padding: 1rem;
+
+    &:hover {
+        background-color: #ff872b;
+    }
 }

@@ -20,10 +20,6 @@
     &__name {
         line-height: 1.55;
         font-weight: 700;
-
-        @include media(1200) {
-            font-size: 3rem;
-        }
     }
 
     /* .block-logo__adress */

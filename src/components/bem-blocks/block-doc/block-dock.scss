@@ -1,0 +1,56 @@
+.block-doc {
+
+    /* .block-doc__box-img */
+
+    &__box-img {
+        height: 8.6rem;
+        width: 8.6rem;
+        position: relative;
+        margin-right: 2rem;
+        
+        img {
+            border-radius: 50%;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            width: 1.4rem;
+            height: 1.4rem;
+            border-radius: 50%;
+            background-color: #79D557;
+        }
+    }
+
+    /* .block-doc__doc */
+
+    &__doc {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+
+    /* .block-doc__name */
+
+    &__name {
+        font-size: 1.8rem;
+        margin-bottom: 1.3rem;
+    }
+
+    /* .block-doc__link */
+
+    &__link {
+        display: inline-block;
+        font-size: 2rem;
+        line-height: 2rem;
+        color: $orange;
+        font-weight: 700;
+        border-bottom: 0.1rem solid $orange;
+
+        &:hover {
+            border-color: transparent;
+        }
+    }
+}
