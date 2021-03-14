@@ -1,0 +1,30 @@
+.block-phone {
+
+    /* .block-phone__text */
+
+    &__text {
+        font-size: 1.8rem;
+        margin: 0.5rem 0 2rem;
+    }
+
+    /* .block-phone__link */
+
+    &__link {
+        font-size: 3.2rem;
+        font-weight: 500;
+        padding-left: 3rem;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            left: 0.3rem;
+            top: 0.3rem;
+            width: 1.6rem;
+            height: 1.6rem;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+

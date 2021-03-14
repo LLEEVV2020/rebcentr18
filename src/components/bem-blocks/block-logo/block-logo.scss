@@ -1,0 +1,35 @@
+.block-logo {
+    margin-right: 4.2rem;
+
+
+    /* .block-logo__img */
+
+    &__img {
+        max-width: 7.4rem;
+        margin-right: 2rem;
+    }
+
+    /* .block-logo__info */
+
+    &__info {
+        max-width: 20rem;
+    }
+
+    /* .block-logo__name */
+
+    &__name {
+        line-height: 1.55;
+        font-weight: 700;
+
+        @include media(1200) {
+            font-size: 3rem;
+        }
+    }
+
+    /* .block-logo__adress */
+
+    &__adress {
+        font-weight: 400;
+        font-size: 1.8rem;
+    }
+}

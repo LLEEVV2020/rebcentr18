@@ -31,7 +31,9 @@ const {
 	strict
 } = require('assert');
 
-const js_plugins = [];
+const js_plugins = [
+	
+];
 const css_plugins = [
 	'node_modules/normalize.css/normalize.css'
 ];
@@ -396,7 +398,7 @@ gulp.task('default',
 		'js',
 		'json',
 		'images',
-		'fonts',
+		// 'fonts',
 		'watch_html',
 		'server_html'
 	)
@@ -409,7 +411,7 @@ gulp.task('dev-php',
 		'js',
 		'json',
 		'images',
-		'fonts',
+		// 'fonts',
 		'watch_php',
 		'server_php'
 	)

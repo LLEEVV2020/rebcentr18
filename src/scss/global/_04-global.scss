@@ -1,12 +1,14 @@
 html {
 	box-sizing: border-box;
-	font-size: 16px;
+	font-family: 'TTCommons', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+	font-size: 62.5%;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+	box-sizing: border-box;
 }
 
 html,
@@ -15,7 +17,19 @@ body {
 	position: relative;
 }
 
-body {}
+body {
+    font-size: 1.6rem;
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 ul,
 ol,
@@ -39,32 +53,50 @@ button {
 	@include no-btn;
 }
 
-.flex {
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.oh {
+    overflow: hidden;
+    padding-right: 1.7rem;
+
+    @include media(960px) {
+        padding-right: 0;
+    }
+}
+
+.db {
+    display: block;
+}
+
+.df {
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-start;
 }
 
-.--just-space {
+.dfsb {
+    display: flex;
 	justify-content: space-between;
 }
 
-.--just-center {
-	justify-content: center;
-}
-
-.--just-end {
-	justify-content: flex-end;
-}
-
-.--align-str {
-	align-items: stretch;
-}
-
-.--align-center {
+.dfac {
+    display: flex;
 	align-items: center;
 }
 
-.--align-end {
-	align-items: flex-end;
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+    outline: transparent;
+}
+
+.reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }

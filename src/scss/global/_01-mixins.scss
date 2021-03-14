@@ -63,3 +63,11 @@
 	cursor: pointer;
 	-webkit-appearance: none;
 }
+
+@mixin media($max) {
+    $media: $max - 1px;
+
+    @media (max-width: $media) {
+        @content;
+    }
+}
