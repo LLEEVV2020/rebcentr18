@@ -53,11 +53,13 @@ input:focus {
 button {
     @include no-btn;
 }
-
+body {
+    height: 200vh;
+}
 .container {
     max-width: 120rem;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1rem;
 
     @include media(1200px) {
         max-width: 96rem;
@@ -68,10 +70,10 @@ button {
     }
 
     @include media(768px) {
-        max-width: 42.5rem;
+        max-width: 57.5rem;
     }
 
-    @include media(425px) {
+    @include media(575px) {
         max-width: 32rem;
         padding: 0 0.7rem;
     }
@@ -132,7 +134,7 @@ a {
     color: #fff;
     width: 100%;
     transition: all 0.3s;
-    line-height: 0;
+    line-height: 1;
     border-radius: 0.5rem;
     padding: 1rem;
 
