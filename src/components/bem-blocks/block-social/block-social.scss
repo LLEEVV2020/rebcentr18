@@ -50,6 +50,17 @@
             color: $orange;
         }
     }
+
+    &__modal {
+        display: none;
+        height: 4.5rem;
+        max-width: 21rem;
+        margin-left:auto;
+
+        @include media(1200) {
+            display: flex;
+        }
+    }
 }
 
 
