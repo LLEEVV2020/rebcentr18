@@ -22,7 +22,6 @@ body {
     color: $black;
     display: flex;
     flex-direction: column;
-    height: auto;
     position: relative;
 }
 
@@ -53,9 +52,7 @@ input:focus {
 button {
     @include no-btn;
 }
-body {
-    height: 200vh;
-}
+
 .container {
     max-width: 120rem;
     margin: 0 auto;
