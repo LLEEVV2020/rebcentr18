@@ -2,10 +2,17 @@
     padding-top: 6rem;
 }
 
+.section-inner {
+    max-width: 120rem;
+    height: 100%;
+    margin: auto;
+    padding: 0 1rem;
+}
+
 .section__title {
     text-align: center;
     margin-bottom: 5rem;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 3.6rem;
     line-height: 1.17;
     color: #2a47b6;
@@ -16,7 +23,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 -.8rem;
 }
 
 .price-card {
@@ -24,7 +30,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem 2rem 3.5rem 2rem;
+    padding: 3rem 0 3.5rem 0;
     margin: 0 .8rem 1.5rem .8rem;
     border-radius: 1rem;
     border-color: transparent;
@@ -35,7 +41,7 @@
 
     @media (min-width: 560px) {
         width: 22rem;
-        padding: 3rem 1rem 3.5rem 1rem;
+        padding: 3rem 0 3.5rem 0;
     }
 
     @media (min-width: 1440px) {
@@ -89,7 +95,7 @@
     width: 14.7rem;
     height: 15rem;
     white-space: pre;
-    background: url(../img/special.svg) center/cover no-repeat;
+    background: url(img/special.svg) center/cover no-repeat;
 
     span {
         font-size: 1.4rem;
@@ -133,10 +139,14 @@
     @media (min-width: 1440px) {
         margin-bottom: 1rem;
     }
+
+    img {
+        margin-right: 1rem;
+    }
 }
 
 .warning {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.6rem;
     line-height: 1.15;
     font-weight: 100;
@@ -147,7 +157,7 @@
     max-width: 18rem;
     margin: 0 auto 1rem auto;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 2.2rem;
     line-height: 1.2;
     color: #fff;
@@ -173,17 +183,21 @@
 }
 
 .price-card__list {
-    padding-left: .5rem;
+    padding: 0 .5rem 0 1.5rem;
 }
 
 .price-card__list-item {
     position: relative;
-    font-weight: 700;
+    font-weight: 600;
     text-indent: 1.5rem;
     font-size: 1.6rem;
     line-height: 1.15;
     font-weight: 100;
     color: #fff;
+
+    @media (min-width: 1440px) {
+        font-size: 1.8rem;
+    }
 
     &::before {
         position: absolute;
@@ -218,7 +232,7 @@
     box-shadow: 0 0 1.5rem 0 rgba(0,0,0,0.3);
 
     &-item {
-        font-weight: 700;
+        font-weight: 600;
         font-size: 1.6rem;
         line-height: 1.4;
         font-weight: 100;
@@ -229,6 +243,11 @@
 .tip__icon {
     margin-left: .5rem;
     vertical-align: middle;
+    display: inline-block;
+    width: 1.8rem;
+    line-height: 1.8;
+    text-align: center;
+    text-indent: initial;
     color: #fff;
     border-radius: 50%;
     background: #2a47b6;
@@ -245,7 +264,7 @@
 
 .price-card__btn {
     padding: .65rem 2.52rem;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.55;
     font-weight: 100;
     font-size: 1.8rem;
@@ -280,31 +299,4 @@
         opacity: 1;
         transform: translateX(0) translateY(0) rotate(0deg)scale(1,1);
     }
-}
-
-.person,
-.clock,
-.doctor {
-    margin-right: 1rem;
-    fill: #fff;
-}
-
-.person {
-    width: 4rem;
-    height: 4.5rem;
-
-    @media (min-width: 1440px) {
-        width: 6rem;
-        height: 6.5rem;
-    }
-}
-
-.clock {
-    width: 4rem;
-    height: 5.2rem;
-}
-
-.doctor {
-    width: 5rem;
-    height: 6rem;
 }
