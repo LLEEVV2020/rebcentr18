@@ -28,6 +28,43 @@
             body.classList.remove('oh');
         }
     });
+
     // berger-menu END
+    
+    
+    // price START
+
+    const priceCards = document.querySelectorAll('.price-card');
+    const priceBtns = document.querySelectorAll('.price-card__btn');
+    
+
+    priceCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            if(!card.classList.contains('price-card--violet')) {
+                card.classList.add('price-card--active');
+            }
+        });
+
+        card.addEventListener('mouseleave', () => {
+            if(!card.classList.contains('price-card--violet')) {
+                card.classList.remove('price-card--active');
+            }
+        });
+    });
+
+    priceBtns.forEach((btn, i) => {
+        btn.addEventListener('mouseenter', e => {
+            priceCards[i].classList.remove('price-card--active');
+        });
+    });
+
+    priceBtns.forEach((btn, i) => {
+        btn.addEventListener('mouseleave', e => {
+            priceCards[i].classList.add('price-card--active');
+        });
+    });
+
+    // price END
+
 
 })();
