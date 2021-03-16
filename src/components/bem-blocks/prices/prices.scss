@@ -89,7 +89,7 @@
     width: 14.7rem;
     height: 15rem;
     white-space: pre;
-    background: url(../img/icons/special.svg) center/cover no-repeat;
+    background: url(../img/special.svg) center/cover no-repeat;
 
     span {
         font-size: 1.4rem;
@@ -229,10 +229,14 @@
 .tip__icon {
     margin-left: .5rem;
     vertical-align: middle;
-    padding: 0 .8rem;
     color: #fff;
     border-radius: 50%;
     background: #2a47b6;
+    display: inline-block;
+    width: 1.8rem;
+    line-height: 1.8rem;
+    text-align: center;
+    text-indent: initial;
 
     &:hover + .tip__list {
         display: block;

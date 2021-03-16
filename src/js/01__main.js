@@ -1,4 +1,4 @@
-;(function () {
+; (function () {
 
     // berger-menu START
 
@@ -8,7 +8,7 @@
     const menu = document.querySelector('.header__bottom');
     const body = document.getElementsByTagName('body')[0];
 
-    
+
     burger.addEventListener('click', () => {
         menu.classList.add('open');
         body.classList.add('oh');
@@ -21,7 +21,7 @@
 
     overlay.addEventListener('click', (e) => {
         let target = e.target;
-        if(target.closest('.header__bottom-inner')) {
+        if (target.closest('.header__bottom-inner')) {
             e.stopPropagation();
         } else if (target.closest('.header__bottom-wrapper') && (!target.closest('.header__bottom-inner'))) {
             menu.classList.remove('open');
@@ -29,24 +29,26 @@
         }
     });
 
-    // berger-menu END
-    
-    
-    // price START
+})();
+// berger-menu END
+
+
+// price START
+; (function () {
 
     const priceCards = document.querySelectorAll('.price-card');
     const priceBtns = document.querySelectorAll('.price-card__btn');
-    
+
 
     priceCards.forEach(card => {
         card.addEventListener('mouseenter', () => {
-            if(!card.classList.contains('price-card--violet')) {
+            if (!card.classList.contains('price-card--violet')) {
                 card.classList.add('price-card--active');
             }
         });
 
         card.addEventListener('mouseleave', () => {
-            if(!card.classList.contains('price-card--violet')) {
+            if (!card.classList.contains('price-card--violet')) {
                 card.classList.remove('price-card--active');
             }
         });
@@ -64,7 +66,6 @@
         });
     });
 
+})();
     // price END
 
-
-})();
