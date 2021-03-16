@@ -1,0 +1,252 @@
+.banner {
+    position: relative;
+    background-color: #f8faf9;
+    padding: 7.3rem 0 9rem;
+    min-height: 65.5rem;
+    overflow: hidden;
+
+    @include media(1200) {
+        padding: 3rem 0;
+    }
+
+    @include media(960) {
+        padding-top: 0;
+        min-height: auto;
+    }
+
+    /* .banner__box-img */
+
+    &__box-img {
+        position: absolute;
+        height: 49rem;
+        max-width: 72rem;
+        right: 50%;
+        transform: translateX(100%);
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        &::after {
+            background: linear-gradient(0deg, rgba(248, 250, 249, 1) 0%, rgba(249, 251, 250, 0) 20%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        &::before {
+            background: linear-gradient(90deg, rgba(248, 250, 249, 1) 0%, rgba(249, 251, 250, 0) 20%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        @include media(1200) {
+            width: 100%;
+            max-width: 69rem;
+            right: 0;
+            transform: translateX(0);
+        }
+
+        @include media(960) {
+            max-width: 100%;
+            height: 41rem;
+
+            &::before {
+                content: none;
+            }
+        }
+
+        @include media(574) {
+            height: 28rem;
+        }
+    }
+
+    /* .banner__box-info */
+
+    &__box-info {
+        position: relative;
+    }
+
+    &__inner {
+        max-width: 50%;
+
+        @include media(960) {
+            max-width: 100%;
+        }
+    }
+
+    /* .banner__title */
+
+    &__title {
+        color: $darkblue;
+        font-size: 4.3rem;
+        line-height: 1.55;
+
+        @include media(1200) {
+            font-size: 3.5rem;
+            max-width: 37rem;
+        }
+
+        @include media(960) {
+            color: #fff;
+            font-size: 2.9rem;
+            margin-top: 3rem;
+        }
+
+        @include media(574) {
+            font-size: 2rem;
+            margin-bottom: 20rem;
+        }
+    }
+
+    /* .banner__sub-title */
+
+    &__sub-title {
+        color: $darkblue;
+        font-size: 4.3rem;
+        line-height: 1.55;
+
+        @include media(1200) {
+            font-size: 3.5rem;
+            max-width: 37rem;
+        }
+
+        @include media(960) {
+            color: #fff;
+            font-size: 2.9rem;
+            margin-bottom: 20rem;
+        }
+
+        @include media(574) {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: $black;
+            text-align: center;
+        }
+    }
+
+    /* .banner__text */
+
+    &__text {
+        color: #1f1f1f;
+        font-size: 2.4rem;
+        margin-bottom: 3rem;
+
+
+        @include media(1200) {
+            font-size: 2.2rem;
+            max-width: 37rem;
+        }
+
+        @include media(960) {
+            margin-left: auto;
+            text-align: right;
+        }
+
+        @include media(574) {
+            text-align: center;
+            font-size: 1.4rem;
+        }
+    }
+
+    /* .banner__form */
+
+    &__form {
+        margin-bottom: 2rem;
+
+        @include media(1200) {
+            flex-direction: column;
+            max-width: 30rem;
+        }
+
+        @include media(960) {
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 60rem;
+            margin: 0 auto;
+        }
+
+        @include media(574) {
+            flex-direction: column;
+            max-width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+
+    /* .banner__input */
+
+    &__input {
+        width: 100%;
+        border: 0.1rem solid #2a47b6;
+        background-color: #ffffff;
+        border-radius: 0.5rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        height: 7rem;
+        max-width: 22rem;
+        padding-left: 4rem;
+        margin-right: 2rem;
+
+        @include media(1200) {
+            max-width: 100%;
+            margin: 0;
+            margin-bottom: 2rem;
+        }
+
+        @include media(960) {
+            max-width: 30rem;
+            height: 5.2rem;
+        }
+
+        @include media(768) {
+            max-width: 25rem;
+        }
+
+        @include media(574) {
+            max-width: 100%;
+        }
+    }
+
+    /* .banner__btn */
+
+    &__btn {
+        max-width: 30rem;
+        height: 7rem;
+        font-size: 2rem;
+
+        @include media(1200) {
+            max-width: 100%;
+        }
+
+        @include media(960) {
+            max-width: 28rem;
+            height: 5.2rem;
+        }
+
+        @include media(574) {
+            max-width: 100%;
+        }
+    }
+
+    /* .banner__anonymously */
+
+    &__anonymously {
+        color: $darkblue;
+        font-size: 1.9rem;
+        font-weight: 500;
+
+        @include media(960) {
+            margin-left: 7.5rem;
+        }
+
+        @include media(768) {
+            margin: 0;
+        }
+
+        @include media(574) {
+            text-align: center;
+            display: block;
+        }
+    }
+}
