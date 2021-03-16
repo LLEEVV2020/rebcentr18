@@ -1,0 +1,134 @@
+.banner-home {
+    overflow: hidden;
+    position: relative;
+    padding: 8.5rem 0;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#000000, 0.5);
+        z-index: 1;
+    }
+
+    iframe {
+        position: absolute;
+    }
+
+    &__wrapper {
+        position: relative;
+        max-width: 84.5rem;
+        z-index: 2;
+        color: #fff;
+
+        @include media(1200) {
+            max-width: 67.5rem;
+        }
+    }
+
+    /* .banner-home__title */
+
+    &__title {
+        font-size: 4.5rem;
+        line-height: 1.65;
+        margin-bottom: 8.8rem;
+
+        @include media(1200) {
+            font-size: 3.5rem;
+            line-height: 1.45;
+        }
+    }
+
+    /* .banner-home__text */
+
+    &__text {
+        font-size: 2.4rem;
+        line-height: 1.55;
+        max-width: 69rem;
+        margin-bottom: 1rem;
+
+        @include media(1200) {
+            font-size: 2.2rem;
+            max-width: 64rem;
+        }
+    }
+
+    /* .banner-home__form */
+
+    &__form {
+        margin-bottom: 1rem;
+    }
+
+    &__input,
+    &__btn {
+        max-width: 30rem;
+        height: 7rem;
+        font-size: 2rem;
+
+        @include media(1200) {
+            max-width: 26.8rem;
+            height: 6rem;
+            font-size: 1.6rem;
+        }
+    }
+
+    /* .banner-home__input */
+
+    &__input {
+        width: 100%;
+        border: none;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-right: 2rem;
+        padding-left: 6rem;
+
+        @include media(1200) {
+            padding-left: 4rem;
+        }
+    }
+
+    /* .banner-home__anonymously */
+
+    &__anonymously {
+        font-size: 1.9rem;
+        line-height: 1.55;
+    }
+
+    &__arrow {
+        position: absolute;
+        display: block;
+        width: 3rem;
+        height: 3rem;
+        border: 0.2rem solid #fff;
+        border-top: none;
+        border-left: none;
+        z-index: 2;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        transform: rotate(45deg);
+        animation: arrows 2s infinite linear;
+    }
+
+    @keyframes arrows {
+        0% {
+            bottom: 4rem;
+        }
+
+        50% {
+            bottom: 3rem;
+        }
+
+        100% {
+            bottom: 4rem;
+        }
+    }
+
+    @include media(960) {
+        display: none;
+    }
+
+}
