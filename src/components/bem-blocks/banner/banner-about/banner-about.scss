@@ -1,0 +1,140 @@
+.banner-about {
+    overflow: hidden;
+    position: relative;
+    padding: 12rem 0;
+    height: 76.4vh;
+    min-height: 63rem;
+    display: flex;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#000000, 0.3);
+        z-index: 1;
+    }
+
+    iframe {
+        position: absolute;
+    }
+
+    /* .banner-about__wrapper */
+
+    &__wrapper {
+        width: 100%;
+        height: 100%;
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    /* .banner-about__inner */
+
+    &__inner {
+        position: relative;
+        margin-top: auto;
+        margin-left: auto;
+        padding: 2rem;
+        padding-right: 6rem;
+        background-color: rgba(42, 71, 180, 0.70);
+        color: #fff;
+        z-index: 1;
+        max-width: 56rem;
+    }
+
+    /* .banner-about__title */
+
+    &__title {
+        font-size: 2.6rem;
+        line-height: 1.5;
+    }
+
+    /* .banner-about__text */
+
+    &__text {
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+
+    /* .banner-about__wrapper-mob */
+
+    &__wrapper-mob {
+        display: none;
+    }
+
+
+
+    @include media(960) {
+        height: auto;
+        padding-top: 9rem;
+        padding-bottom: 0;
+
+        &::before {
+            content: none;
+        }
+
+        iframe,
+        &__wrapper {
+            display: none;
+        }
+
+        /* .banner-about__wrapper-mob */
+
+        &__wrapper-mob {
+            display: block;
+        }
+
+        /* .banner-about__mob-title */
+
+        &__mob-title {
+            color: $darkblue;
+            margin-bottom: 4rem;
+            font-size: 4.4rem;
+            line-height: 1.23;
+            max-width: 60rem;
+
+            @include media(768) {
+                font-size: 3rem;
+                margin-bottom: 2rem;
+            }
+
+            @include media(574) {
+                max-width: 29rem;
+            }
+        }
+
+        /* .banner-about__mob-text */
+
+        &__mob-text {
+            font-size: 2.6rem;
+            margin-bottom: 3.5rem;
+            line-height: 1.55;
+            max-width: 60rem;
+
+            @include media(768) {
+                margin-bottom: 3.5rem;
+            }
+
+            @include media(574) {
+                max-width: 29rem;
+            }
+        }
+
+        /* .banner-about__mob-img */
+
+        &__mob-img {
+            height: auto;
+        }
+
+    }
+
+    @include media(768) {
+        padding-top: 5rem;
+    }
+}
