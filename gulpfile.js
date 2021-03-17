@@ -32,7 +32,7 @@ const {
 } = require('assert');
 
 const js_plugins = [
-	
+	'node_modules/fslightbox/index.js'
 ];
 const css_plugins = [
 	'node_modules/normalize.css/normalize.css'
