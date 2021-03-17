@@ -1,0 +1,102 @@
+.content {
+    padding: 9rem 0 7rem 0;
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #000000;
+    line-height: 1.55;
+
+    &__cnt {
+        margin-bottom: 6rem;
+        flex-wrap: wrap;
+    }
+
+    &__bloc {
+        width: 48%;
+        margin-right: 3rem;
+        overflow: hidden;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        iframe {
+            min-height: 315px;
+        }
+    }
+
+    &__titles {
+        margin-bottom: 3rem;
+        font-weight: 700;
+        font-size: 3.6rem;
+        line-height: 1.17;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-weight: bold;
+        margin-bottom: 3rem;
+        font-size: 1.8rem;
+    }
+
+    &__list {
+        padding: 0;
+        padding-left: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    &__list-link {
+        color: $orange;
+        transition: 1.3s;
+        width: auto;
+        position: relative;
+    
+        &:focus:after,
+        &:hover:after {
+            width: 100%;
+            left: 0;
+            opacity: 1;
+            transition: width 0.4s ease-in-out;
+        }
+    
+        &:after {
+            content: "";
+            position: absolute;
+            height: 0.1rem;
+            width: 0%;
+            bottom: 0;
+            right: 0;
+            background-color: $orange;
+            transition: width 0.4s ease-in-out;
+        }
+    }
+
+    &__text {
+        margin-bottom: 3rem;
+    }
+}
+
+.texts {
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 959px) {
+    .content__bloc {
+        width: 100%;
+        margin-right: 0rem;
+        margin-bottom: 3rem;
+        overflow: hidden;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .content__bloc {
+        iframe {
+            min-height: 100%;
+        }
+    }
+}
