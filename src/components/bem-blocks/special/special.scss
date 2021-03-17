@@ -6,6 +6,14 @@
 
     }
 
+    &--darkblue {
+        background-color: $darkblue;
+
+        .block-special__title {
+            color: #fff;
+        }
+    }
+
     /* .block-special__title */
 
     &__title {
