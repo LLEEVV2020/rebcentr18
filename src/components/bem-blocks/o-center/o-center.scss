@@ -1,0 +1,48 @@
+.o-center {
+    background-position: center center;
+    background-image: url("/img/bg-o-center.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    padding-top: 15rem;
+    padding-bottom: 4rem;
+
+    &::after {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, rgba(0, 31, 156, 0.8), rgba(0, 31, 156, 0.8));
+    }
+
+    p {
+        color: #ffffff;
+        font-size: 2.4rem;
+        line-height: 1.55;
+        font-weight: 400;
+        z-index: 1;
+    }
+
+    i {
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 959px) {
+    .o-center {
+        &__texts {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .o-center {
+        padding-top: 6rem;
+    }
+}
