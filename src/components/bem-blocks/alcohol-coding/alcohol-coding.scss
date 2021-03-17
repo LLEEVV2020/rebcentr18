@@ -1,0 +1,17 @@
+.price-card--middle {
+    width: 27rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 .8rem 1.5rem .8rem;
+
+    @media (min-width: 560px) {
+        width: 27rem;
+        margin: 0 .8rem 1.5rem .8rem;
+    }
+
+    @media (min-width: 1440px) {
+        width: 27rem;
+        margin: 0 .8rem 1.5rem .8rem;
+        padding: 1rem 0 3.8rem 0;
+    }
+}
