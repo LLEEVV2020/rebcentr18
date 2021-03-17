@@ -1,0 +1,15 @@
+.price-card__price-note {
+    max-width: 20rem;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.15;
+    font-weight: 100;
+    color: #fff;
+}
+
+.price-card--long {
+
+    @media (min-width: 1440px) {
+        width: 39rem;
+    }
+}
