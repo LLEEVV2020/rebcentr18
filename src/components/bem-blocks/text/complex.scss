@@ -1,0 +1,130 @@
+.complex {
+    padding: 5rem 0;
+
+    @include media(768) {
+        padding: 3rem 0;
+    }
+
+    /* .complex__title */
+
+    &__title {
+        color: $darkblue;
+        text-align: center;
+        font-size: 4.2rem;
+        margin-bottom: 5rem;
+
+        @include media(1200) {
+            font-size: 3.8rem;
+            margin-bottom: 4rem;
+        }
+
+        @include media(768) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    /* .complex__subtitle */
+
+    &__subtitle {
+        max-width: 56rem;
+        margin: 0 auto;
+        font-size: 2.4rem;
+        text-align: center;
+        line-height: 1.55;
+        font-weight: 500;
+        margin-bottom: 10rem;
+
+        @include media(1200) {
+            font-size: 2.2rem;
+        }
+
+        @include media(768) {
+            margin-bottom: 5rem;
+            font-size: 1.8rem;
+        }
+    }
+
+    /* .complex__list */
+
+    &__list {
+        flex-wrap: wrap;
+        counter-reset: section;
+        margin-bottom: -8.5rem;
+
+        @include media(960) {
+            justify-content: space-around;
+        }
+
+        @include media(768) {
+            justify-content: space-between;
+            margin-bottom: -2.5rem;
+        }
+    }
+
+    /* .complex__item */
+
+    &__item {
+        max-width: 35rem;
+        padding-top: 7rem;
+        position: relative;
+        margin-bottom: 8.5rem;
+
+        &::before {
+            content: counter(section);
+            counter-increment: section;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-size: 22rem;
+            color: $darkblue;
+            font-weight: 700;
+            top: 0;
+            line-height: 0.7;
+            z-index: -1;
+            opacity: 0.1;
+            font-family: sans-serif;
+        }
+
+        @include media(1200) {
+            max-width: 30rem;
+        }
+
+        @include media(768) {
+            max-width: 26rem;
+            margin-bottom: 2.5rem;
+        }
+
+        @include media(475) {
+            max-width: 100%;
+        }
+    }
+
+    /* .complex__item-title */
+
+    &__item-title {
+        color: $darkblue;
+        font-size: 2.2rem;
+        line-height: 1.35;
+        margin-bottom: 2rem;
+    }
+
+    /* .complex__item-text */
+
+    &__item-text {
+        line-height: 1.55;
+
+        @include media(1200) {
+            font-size: 1.4rem;
+        }
+    }
+
+    /* .complex__item-text-link */
+
+    &__item-text-link {
+        color: $darkblue;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+}
