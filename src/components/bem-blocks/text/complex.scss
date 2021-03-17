@@ -116,15 +116,14 @@
         @include media(1200) {
             font-size: 1.4rem;
         }
-    }
 
-    /* .complex__item-text-link */
-
-    &__item-text-link {
-        color: $darkblue;
-
-        &:hover {
-            color: $orange;
+        a {
+            color: $darkblue;
+    
+            &:hover {
+                color: $orange;
+            }
         }
     }
+
 }
