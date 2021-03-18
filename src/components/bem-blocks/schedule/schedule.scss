@@ -1,0 +1,42 @@
+.schedule {
+    padding-top: 7rem;
+    &__title {
+        margin-bottom: 7rem;
+        color: #2a47b6;
+        font-size: 3.5rem;
+        line-height: 1.45;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-align: center;
+    }
+    p {
+        color: #050505;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 1.55;
+    }
+}
+@media (max-width: 959px) {
+    .schedule {
+        padding-top: 5rem;
+        &__title {
+            margin-bottom: 3.5rem;
+            font-size: 3rem;
+        }
+        p {
+            font-size: 1.8rem;
+        }
+    }
+}
+@media (max-width: 549px) {
+    .schedule {
+        padding-top: 4rem;
+        &__title {
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.6rem;
+        }
+    }
+}
