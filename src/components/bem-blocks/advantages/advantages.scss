@@ -1,0 +1,131 @@
+.advantages {
+    position: relative;
+    padding: 7rem 0 0;
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, rgba(0, 31, 156, 0.8), rgba(0, 31, 156, 0.8));
+    }
+
+    @include media(960) {
+        padding-top: 3rem;
+    }
+
+    /* .advantages__img */
+
+    &__img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        object-position: center;
+    }
+
+    /* .advantages__wrapper */
+
+    &__wrapper {
+        position: relative;
+        z-index: 1;
+    }
+
+    /* .advantages__title */
+
+    &__title {
+        font-size: 3.5rem;
+        text-align: center;
+        color: #fff;
+        line-height: 1.45;
+        max-width: 56rem;
+        margin: 0 auto 5rem;
+
+        @include media(960) {
+            font-size: 3rem;
+        }
+
+        @include media(574) {
+            font-size: 2rem;
+        }
+    }
+
+    /* .advantages__list */
+
+    &__list {
+        flex-wrap: wrap;
+
+        @include media(1200) {
+            justify-content: space-between;
+        }
+
+        @include media(960) {
+            justify-content: space-around;
+        }
+    }
+
+    /* .advantages__item */
+
+    &__item {
+        width: 100%;
+        max-width: 25rem;
+        text-align: center;
+        margin-bottom: 7rem;
+
+        @include media(1200) {
+            max-width: 23rem;
+        }
+
+        @include media(960) {
+            margin-bottom: 3rem;
+            max-width: 20rem;
+        }
+
+        @include media(574) {
+            max-width: 48%;
+        }
+    }
+
+    /* .advantages__item-icon */
+
+    &__item-icon {
+        width: 14.4rem;
+        height: 14.4rem;
+        border-radius: 50%;
+        background-color: #fff;
+        padding: 3.5rem;
+        margin: 0 auto 2rem;
+
+        @include media(960) {
+            width: 10.8rem;
+            height: 10.8rem;
+            padding: 2.5rem;
+        }
+
+        @include media(574) {
+            width: 7.7rem;
+            height: 7.7rem;
+            padding: 2rem;
+        }
+    }
+
+    /* .advantages__item-text */
+
+    &__item-text {
+        font-size: 2rem;
+        line-height: 1.55;
+        color: #fff;
+        font-weight: 500;
+
+        @include media(960) {
+            font-size: 1.8rem;
+            line-height: 1.35;
+        }
+
+        @include media(575) {
+            font-size: 1.4rem;
+        }
+    }
+}
