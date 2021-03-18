@@ -1,0 +1,136 @@
+.news-articles {
+    padding-top: 7rem;
+
+    @media (min-width: 1440px) {
+        padding-top: 11rem;
+    }
+
+    .btn--more {
+        align-self: center;
+        padding: 2.2rem 2.34rem;
+        font-size: 1.6rem;
+
+        @media (min-width: 1440px) {
+            padding: 2.2rem 5.338rem;
+        }
+    }
+}
+
+.news,
+.articles {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+
+    @media (min-width: 1440px) {
+        margin-bottom: 10rem;
+    }
+}
+
+.section__title--news,
+.section__title--articles {
+    margin-bottom: 6.5rem;
+
+    @media (min-width: 1440px) {
+        margin-bottom: 8rem;
+    }
+}
+
+.section__title--news {
+    font-size: 3rem;
+
+    @media (min-width: 1440px) {
+        font-size: 3.5rem;
+    }
+}
+
+.section__title--articles {
+    font-size: 2.5rem;
+
+    @media (min-width: 1440px) {
+        font-size: 3.5rem;
+    }
+}
+
+.posts-list {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 9rem;
+
+    @media (min-width: 1440px) {
+        padding-bottom: 10rem;
+        margin: 0 -2rem;
+    }
+
+    a {
+        display: block;
+
+        &:not(:last-of-type) {
+            margin-bottom: 8rem;
+
+            @media (min-width: 1440px) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .post {
+        width: 28rem;
+
+        @media (min-width: 560px) {
+            margin: 0 1rem;
+        }
+
+        @media (min-width: 1440px) {
+            width: 26rem;
+            margin: 0 2rem;
+        }
+
+        &__img {
+            width: 28rem;
+            height: 21rem;
+            margin-bottom: 2rem;
+            overflow: hidden;
+
+            @media (min-width: 1440px) {
+                width: 26rem;
+                height: 19.5rem;
+            }
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__title{
+            margin-bottom: .8rem;
+            color: #2a47b6;
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.35;
+        }
+
+        &__description {
+            margin-bottom: 1.5rem;
+            color: #050505;
+            font-size: 1.2rem;
+            font-weight: 100;
+            line-height: 1.55;
+
+            @media (min-width: 1440px) {
+                font-size: 1.4rem;
+            }
+        }
+
+        &__date {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 1.5rem;
+            font-size: 2rem;
+            font-weight: 400;
+            letter-spacing: .1rem;
+            color: rgba(0,0,0,.5);
+        }
+    }
+}
