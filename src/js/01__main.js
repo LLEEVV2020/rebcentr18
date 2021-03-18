@@ -69,3 +69,19 @@
 })();
     // price END
 
+    // social-menu START
+
+; (function () {
+
+        const socialMenu = document.querySelector('.social-menu__social');
+        const socialMenuBtn = document.querySelector('.social-menu__btn');
+
+        socialMenuBtn.addEventListener('click', () => {
+            socialMenuBtn.classList.toggle('open');
+            socialMenu.classList.toggle('open');
+        });
+
+})();
+
+    // social-menu END
+
