@@ -5,6 +5,17 @@
         padding: 3rem 0;
     }
 
+    &.complex-stage {
+        .complex__item {
+            max-width: 47%;
+
+            @include media(575) {
+                max-width: 100%;
+            }
+        }
+    }
+
+
     /* .complex__title */
 
     &__title {
@@ -64,6 +75,7 @@
     /* .complex__item */
 
     &__item {
+        width: 100%;
         max-width: 35rem;
         padding-top: 7rem;
         position: relative;
@@ -94,7 +106,7 @@
             margin-bottom: 2.5rem;
         }
 
-        @include media(475) {
+        @include media(575) {
             max-width: 100%;
         }
     }
@@ -119,7 +131,7 @@
 
         a {
             color: $darkblue;
-    
+
             &:hover {
                 color: $orange;
             }
