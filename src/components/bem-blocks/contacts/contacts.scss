@@ -1,0 +1,301 @@
+.contacts {
+    padding-bottom: 4rem;
+
+    @media (min-width: 1440px) {
+        padding-bottom: 9rem;
+    }
+}
+
+.contacts__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 961px) {
+        flex-direction: row;
+        align-items: initial;
+    }
+}
+
+.contacts__data {
+    max-width: 60rem;
+    width: 100%;
+    padding: 0 3.1rem;
+    margin-bottom: 3rem;
+    
+    @media (min-width: 768px) {
+        margin-bottom: 4rem;
+        padding: 0 4rem;
+    }
+
+    @media (min-width: 961px) {
+        max-width: 38rem;
+        padding: 0 1rem;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 46.4rem;
+        width: 40%;
+        margin-bottom: 0;
+    }
+        
+    .data__block {
+        margin-bottom: 4rem;
+
+        @media (min-width: 1440px) {
+            margin-bottom: 5rem;
+        }
+
+        &-title,
+        &-info {
+            font-size: 1.8rem;
+            line-height: 1.55;
+            color: #050505;
+
+            @media (min-width: 1440px) {
+                font-size: 2.1rem;
+            }
+        }
+
+        &-title {
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        &-info {
+            font-weight: 100;
+
+            a {
+                font-size: 1.8rem;
+                font-weight: 100;
+                line-height: 1.55;
+                color: #050505;
+
+                @media (min-width: 1440px) {
+                    font-size: 2.1rem;
+                }
+
+                span {
+                    color: #050505;
+                    border-bottom: none !important; 
+                }
+            }
+
+            .messenger-link {
+                color: rgb(255, 107, 0);
+                border-bottom: .1rem solid rgb(255, 107, 0);
+            }
+        }
+    }
+
+    .social__block {
+        display: flex;
+
+        a {
+            display: block;
+        }
+
+        .social__icon {
+            width: 3rem;
+            height: 3rem;
+
+            &:not(:last-of-type) {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}
+
+.contacts__map {
+    max-width: 64rem;
+    width: 100%;
+    height: 30rem;
+    margin: 0 auto;
+    box-shadow: 0 0 3rem 0 rgba(0,0,0,0.1);
+
+    @media (min-width: 768px) {
+        height: 50rem;
+    }
+
+    @media (min-width: 961px) {
+        max-width: 54rem;
+    }
+
+    @media (min-width: 1200px) {
+        width: 60%;
+        max-width: 66rem;
+        margin: 0 0 0 auto;
+    }
+
+    .map__wrap {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.section__title--contacts {
+    margin-bottom: 4.5rem;
+
+    @media (min-width: 1440px) {
+        margin-bottom: 8rem;
+    }
+}
+
+.duty-doctor {
+    padding: 4.5rem 0;
+    background-color: #2a47b6;
+
+    @media (min-width: 1440px) {
+        padding: 9rem 8.5rem;
+    }
+}
+
+.section__title--duty-doctor {
+    font-size: 2.5rem;
+    line-height: 1.45;
+    font-weight: 600;
+    color: #fff;
+
+    @media (min-width: 961px) {
+        font-size: 3.5rem;
+        letter-spacing: .5rem;
+    }
+}
+
+.doctor-block {
+    max-width: 46rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem 0 rgba(0,0,0,0.1);
+
+    @media (min-width: 481px) {
+        flex-direction: row;
+        justify-content: center;
+        padding: 3.9rem 2rem;
+    }
+
+    @media (min-width: 640px) {
+        max-width: 64rem;
+        padding: 7.3rem 2rem;
+    }
+    
+    @media (min-width: 961px) {
+        max-width: 83.6rem;
+        min-height: 46.5rem;
+        padding: 8.25rem 4rem 8.25rem 6rem;
+    }
+
+    .doctor__photo {
+        width: 21rem;
+        height: 21rem;
+        overflow: hidden;
+        margin: 0 auto 2.2rem auto;
+        border-radius: 50%;
+
+        @media (min-width: 481px) {
+            width: 14.3rem;
+            height: 14.3rem;
+            margin: 0 2rem 0 0;
+        }
+
+        @media (min-width: 640px) {
+            width: 19.7rem;
+            height: 19.7rem;
+            margin: 0 8.5rem 0 0;
+        }
+
+        @media (min-width: 961px) {
+            width: 30rem;
+            height: 30rem;
+            margin: 0 7rem 0 0;
+        }
+
+        &--online {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "";
+                z-index: 1;
+                top: 8rem;
+                right: 2.5rem;
+                width: 2.4rem;
+                height: 2.4rem;
+                border-radius: 50%;
+                background-color: #32CD32;
+            }
+        }
+    }
+
+    .doctor__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: 481px) {
+            align-items: flex-start;
+        }
+
+        .doctor__name {
+            margin-bottom: .5rem;
+            font-size: 1.8rem;
+            line-height: 1.55;
+            font-weight: 600;
+            color: #050505;
+
+            @media (min-width: 961px) {
+                margin-bottom: 1.6rem;
+                font-size: 2.5rem;
+            }
+        }
+
+        .doctor__position {
+            margin-bottom: 3rem;
+            font-size: 1.4rem;
+            line-height: 1.55;
+            font-weight: 100;
+            color: #050505;
+
+            @media (min-width: 961px) {
+                font-size: 1.8rem;
+            }
+        }
+
+        .doctor__phone {
+            
+            a {
+                display: block;
+                margin-bottom: 4.5rem;
+                font-size: 1.8rem;
+                line-height: 1.55;
+                font-weight: 600;
+                color: #050505;
+
+                @media (min-width: 481px) {
+                    margin-bottom: 2rem;
+                }
+
+                @media (min-width: 961px) {
+                    margin-bottom: 4.5rem;
+                }
+            }
+        }
+
+        .btn--duty-doctor {
+            width: 15rem;
+            padding: 1.45rem 0;
+            font-size: 1.6rem;
+    
+            @media (min-width: 961px) {
+                width: 16rem;
+            }
+        }
+    }
+}

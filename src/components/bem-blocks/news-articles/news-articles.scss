@@ -1,4 +1,5 @@
-.news-articles {
+.news-articles,
+.contacts {
     padding-top: 7rem;
 
     @media (min-width: 1440px) {
@@ -6,12 +7,12 @@
     }
 
     .btn--more {
-        align-self: center;
-        padding: 2.2rem 2.34rem;
+        width: 15rem;
+        padding: 1.45rem 0;
         font-size: 1.6rem;
 
         @media (min-width: 1440px) {
-            padding: 2.2rem 5.338rem;
+            width: 21rem;
         }
     }
 }
@@ -44,7 +45,8 @@
     }
 }
 
-.section__title--articles {
+.section__title--articles,
+.section__title--contacts {
     font-size: 2.5rem;
 
     @media (min-width: 1440px) {
