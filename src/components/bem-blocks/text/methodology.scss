@@ -1,0 +1,160 @@
+.methodology {
+    margin: 5rem 0;
+
+    @include media(575) {
+        margin: 3rem 0;
+    }
+
+    /* .methodology__title */
+
+    &__title {
+        text-align: center;
+        font-size: 4.2rem;
+        margin-bottom: 4rem;
+        color: $darkblue;
+
+        @include media(960) {
+            font-size: 3.8rem;
+            margin-bottom: 3rem;
+        }
+
+        @include media(575) {
+            font-size: 3rem;
+        }
+    }
+
+    /* .methodology__subtitle */
+
+    &__subtitle {
+        text-align: center;
+        max-width: 56rem;
+        margin: 0 auto;
+        font-size: 2.4rem;
+        line-height: 1.50;
+        margin-bottom: 10rem;
+
+        @include media(960) {
+            font-size: 2.2rem;
+            margin-bottom: 5rem;
+        }
+
+        @include media(575) {
+            font-size: 2rem;
+        }
+    }
+
+    /* .methodology__link */
+
+    &__link {
+        color: $orange;
+        transition: 1.3s;
+        width: auto;
+        position: relative;
+
+        &:focus:after,
+        &:hover:after {
+            width: 100%;
+            left: 0;
+            opacity: 1;
+            transition: width 0.4s ease-in-out;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            height: 0.1rem;
+            width: 0%;
+            bottom: 0;
+            right: 0;
+            background-color: $orange;
+            transition: width 0.4s ease-in-out;
+        }
+    }
+
+    /* .methodology__wrapper */
+
+    &__wrapper {
+        counter-reset: item;
+
+        @include media(960) {
+            flex-wrap: wrap;
+        }
+    }
+
+    /* .methodology__item */
+
+    &__item {
+        text-align: center;
+        position: relative;
+        width: 50%;
+        padding: 3.5rem 4rem 0;
+
+        &::before {
+            content: "-"counter(item)"-";
+            counter-increment: item;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-size: 1.6rem;
+            font-weight: 700;
+            top: 0;
+            line-height: 0.7;
+            z-index: -1;
+            left: 0;
+            right: 0;
+            font-family: sans-serif;
+
+            @include media(960) {
+                font-size: 1.4rem;
+            }
+
+            @include media(575) {
+                font-size: 1.2rem;
+            }
+        }
+
+        &:first-child {
+            border-right: 0.1rem solid #d1d1d1;
+        }
+
+        @include media(960) {
+            width: 100%;
+            padding: 2rem 0;
+
+            &:first-child {
+                border-right: none;
+                border-bottom: 0.1rem solid #d1d1d1;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    /* .methodology__item-title */
+
+    &__item-title {
+        font-size: 2.4rem;
+        line-height: 1.35;
+        color: $darkblue;
+        margin-bottom: 2rem;
+
+        @include media(575) {
+            font-size: 2rem;
+        }
+    }
+
+    /* .methodology__item-teext */
+
+    &__item-teext {
+        font-size: 1.8rem;
+        line-height: 1.55;
+        font-weight: 500;
+
+        @include media(960) {
+            font-size: 1.6rem;
+        }
+
+        @include media(575) {
+            font-size: 1.4rem;
+        }
+    }
+}
