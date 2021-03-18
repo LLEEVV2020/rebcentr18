@@ -1,0 +1,93 @@
+.brigade {
+    padding: 6rem 0;
+
+    @include media(575) {
+        padding: 3rem 0;
+    }
+
+
+    /* .brigade__title */
+
+    &__title {
+        font-size: 4.2rem;
+        text-align: center;
+        color: $darkblue;
+        line-height: 1.23;
+        margin-bottom: 10rem;
+
+        @include media(1200) {
+            font-size: 3.8rem;
+        }
+
+        @include media(575) {
+            font-size: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+    /* .brigade__wrapper */
+
+    &__wrapper {
+        margin-bottom: 6rem;
+
+        @include media(1200) {
+            flex-wrap: wrap;
+        }
+
+        @include media(575) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    /* .brigade__item */
+
+    &__item {
+        text-align: center;
+
+        @include media(1200) {
+            width: 50%;
+            margin-bottom: 2rem;
+        }
+
+        @include media(575) {
+            width: 100%;
+        }
+    }
+
+    /* .brigade__item-img */
+
+    &__item-img {
+        width: 100%;
+        max-width: 26rem;
+        height: 26rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    /* .brigade__item-name */
+
+    &__item-name {
+        font-size: 2.2rem;
+        line-height: 1.35;
+        max-width: 20rem;
+        margin: 0 auto;
+
+        @include media(1200) {
+            font-size: 1.8rem;
+        }
+
+        @include media(575) {
+            font-size: 2rem;
+        }
+    }
+
+    /* .brigade__btn */
+
+    &__btn {
+        max-width: 27rem;
+        height: 6rem;
+        margin: 0 auto;
+    }
+}
