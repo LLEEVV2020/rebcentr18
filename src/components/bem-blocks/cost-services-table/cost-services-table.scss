@@ -1,0 +1,169 @@
+.cost-services-table {
+    padding: 6rem 0;
+    &__title {
+        color: #2a47b6;
+        line-height: 1.45;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-align: center;
+        margin-bottom: 3rem;
+        font-size: 2.5rem;
+    }
+    table {
+        margin: 0 auto;
+        font-weight: 600;
+        border-spacing: 0;
+        width: 100%;
+        font-size: 1.8rem;
+    }
+    caption {
+        color: #050505;
+        margin-bottom: 2rem;
+    }
+    tr {
+        text-align: left;
+    }
+
+    th {
+        border-top: 0.1rem solid #d9d9d9;
+        border-bottom: 0.1rem solid #d9d9d9;
+        background: #2a47b6;
+        color: #ffffff;
+        padding: 2rem 0.5rem;
+    }
+    td {
+        color: #4d4c4c;
+        padding: 1.2rem;
+        font-weight: 400;
+        background-color: #eeeeee;
+        border-top: 0.1rem solid #d9d9d9;
+        border-bottom: 0.1rem solid #d9d9d9;
+        div {
+            display: block;
+            text-align: center;
+            button {
+                margin: 0 auto;
+                display: block;
+                padding: 1.2rem;
+                background-color: #ff6b00;
+                align-self: baseline;
+                color: #ffffff;
+                border-radius: 3px;
+                font-weight: 300;
+                transition: 0.5s;
+                margin-top: 2rem;
+                &:hover {
+                    background-color: #ff872b;
+                    transition-duration: 0.3s;
+                }
+            }
+        }
+    }
+    p {
+        margin: 0 auto;
+        color: #050505;
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 1.55;
+        width: 100%;
+        margin-top: 3rem;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 10%;
+            height: 0.2rem;
+            top: -1.5rem;
+            left: 0;
+            background-color: #222;
+            opacity: 1;
+            transition: width 0.4s ease-in-out;
+        }
+        a {
+            position: relative;
+            transition: 1.3s;
+            color: #ff6b00;
+            &:focus::after,
+            &:hover::after {
+                width: 100%;
+                left: 0;
+                opacity: 1;
+                transition: width 0.4s ease-in-out;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                width: 0%;
+                height: 0.1rem;
+                bottom: 0;
+                right: 0;
+                background-color: #ff6b00;
+                opacity: 1;
+                transition: width 0.4s ease-in-out;
+            }
+        }
+    }
+}
+.cost-services-table__indent {
+    padding-top: 0rem;
+}
+@media (min-width: 574px) {
+    .cost-services-table {
+        td {
+            width: 50%;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .cost-services-table {
+        padding: 3rem 0;
+        table {
+            width: 100%;
+            div {
+                display: flex;
+                justify-content: space-between;
+                text-align: left;
+                align-content: center;
+                button {
+                    margin: 0;
+                    margin-left: 2rem;
+                    padding: 1.2rem 2.8rem;
+                }
+            }
+            td {
+                padding: 1.2rem 2rem;
+            }
+        }
+
+        p {
+            width: 100%;
+            font-size: 1.8rem;
+        }
+        &__title {
+            margin-bottom: 3.5rem;
+            font-size: 3rem;
+        }
+    }
+}
+@media (min-width: 959px) {
+    .cost-services-table {
+        padding-top: 5rem;
+        &__title {
+            margin-bottom: 4rem;
+            font-size: 3.5rem;
+        }
+        p {
+            font-size: 2rem;
+        }
+        caption {
+            margin-bottom: 4rem;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .cost-services-table {
+        table {
+            font-size: 2rem;
+        }
+    }
+}
