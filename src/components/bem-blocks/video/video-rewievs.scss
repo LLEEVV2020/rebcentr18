@@ -62,6 +62,7 @@
     &__box-video {
         width: 100%;
         max-width: 56rem;
+        margin-bottom: 4rem;
 
         @include media(1200) {
             max-width: 46rem;
