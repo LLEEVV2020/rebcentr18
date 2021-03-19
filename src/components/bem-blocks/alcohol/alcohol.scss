@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 .price-card--wide {
     width: 30rem !important;
-=======
-.price-card.price-card.price-card--wide {
-    width: 30rem;
->>>>>>> b44d50bda5234357eff1bb6030156633ce70c794
     display: flex;
     flex-direction: column;
     margin: 0 0 1.5rem 0 !important;
@@ -21,13 +16,8 @@
     }
 }
 
-<<<<<<< HEAD
 .price-card__top--wide {
     min-height: 8.6rem !important;
-=======
-.price-card__top.price-card__top--wide {
-    min-height: 8.6rem;
->>>>>>> b44d50bda5234357eff1bb6030156633ce70c794
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,13 +33,8 @@
     max-width: 18.7rem;
 }
 
-<<<<<<< HEAD
-.price-card__title--wide {
-    max-width: 22rem !important;
-=======
 .price-card__title.price-card__title--wide {
     max-width: 22rem;
->>>>>>> b44d50bda5234357eff1bb6030156633ce70c794
     margin-bottom: 0;
 
     @media (min-width: 1440px) {
@@ -58,15 +43,9 @@
     }
 }
 
-<<<<<<< HEAD
 .price-card__list--wide {
     padding: 0 3.5rem 0 2.3rem !important;
     margin: 2rem 0 2.1rem 0 !important;
-=======
-.price-card__title.price-card__list--wide {
-    padding: 0 3.5rem 0 2.3rem;
-    margin: 2rem 0 2.1rem 0;
->>>>>>> b44d50bda5234357eff1bb6030156633ce70c794
 }
 
 .price-card__list-title,
