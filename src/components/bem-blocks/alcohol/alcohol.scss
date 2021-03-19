@@ -1,4 +1,4 @@
-.price-card--wide {
+.price-card.price-card.price-card--wide {
     width: 30rem;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@
     }
 }
 
-.price-card__top--wide {
+.price-card__top.price-card__top--wide {
     min-height: 8.6rem;
     display: flex;
     flex-direction: column;
@@ -29,11 +29,11 @@
     }
 }
 
-.price-card__top--short {
+.price-card__top.price-card__top--short {
     max-width: 18.7rem;
 }
 
-.price-card__title--wide {
+.price-card__title.price-card__title--wide {
     max-width: 22rem;
     margin-bottom: 0;
 
@@ -43,7 +43,7 @@
     }
 }
 
-.price-card__list--wide {
+.price-card__title.price-card__list--wide {
     padding: 0 3.5rem 0 2.3rem;
     margin: 2rem 0 2.1rem 0;
 }
