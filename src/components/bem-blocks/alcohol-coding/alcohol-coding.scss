@@ -1,17 +1,17 @@
 .price-card--middle {
-    width: 27rem;
+    width: 27rem !important;
     display: flex;
     flex-direction: column;
-    margin: 0 .8rem 1.5rem .8rem;
+    margin: 0 .8rem 1.5rem .8rem !important;
 
     @media (min-width: 560px) {
-        width: 27rem;
-        margin: 0 .8rem 1.5rem .8rem;
+        width: 27rem !important;
+        margin: 0 .8rem 1.5rem .8rem !important;
     }
 
     @media (min-width: 1440px) {
-        width: 27rem;
-        margin: 0 .8rem 1.5rem .8rem;
-        padding: 1rem 0 3.8rem 0;
+        width: 27rem !important;
+        margin: 0 .8rem 1.5rem .8rem !important;
+        padding: 1rem 0 3.8rem 0 !important;
     }
 }

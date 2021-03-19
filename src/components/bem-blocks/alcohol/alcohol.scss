@@ -1,23 +1,23 @@
 .price-card--wide {
-    width: 30rem;
+    width: 30rem !important;
     display: flex;
     flex-direction: column;
-    margin: 0 0 1.5rem 0;
-    padding: 2rem 0 2.8rem 0;
+    margin: 0 0 1.5rem 0 !important;
+    padding: 2rem 0 2.8rem 0 !important;
 
     @media (min-width: 560px) {
-        width: 30rem;
-        margin: 0 2.1rem 1.5rem 2.1rem;
+        width: 30rem !important;
+        margin: 0 2.1rem 1.5rem 2.1rem !important;
     }
 
     @media (min-width: 1440px) {
-        width: 35rem;
-        padding: 1rem 0 3.8rem 0;
+        width: 35rem !important;
+        padding: 1rem 0 3.8rem 0 !important;
     }
 }
 
 .price-card__top--wide {
-    min-height: 8.6rem;
+    min-height: 8.6rem !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,7 +25,7 @@
     border-bottom: .2rem solid #fff;
 
     @media (min-width: 1440px) {
-        min-height: 8.6rem;
+        min-height: 8.6rem !important;
     }
 }
 
@@ -34,18 +34,18 @@
 }
 
 .price-card__title--wide {
-    max-width: 22rem;
+    max-width: 22rem !important;
     margin-bottom: 0;
 
     @media (min-width: 1440px) {
-        max-width: 24rem;
+        max-width: 24rem !important;
         font-size: 2.4rem;
     }
 }
 
 .price-card__list--wide {
-    padding: 0 3.5rem 0 2.3rem;
-    margin: 2rem 0 2.1rem 0;
+    padding: 0 3.5rem 0 2.3rem !important;
+    margin: 2rem 0 2.1rem 0 !important;
 }
 
 .price-card__list-title,
