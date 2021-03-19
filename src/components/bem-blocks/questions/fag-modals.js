@@ -11,7 +11,6 @@
             modals[i].classList.add('questions-modal--open');
             modalsWrap[i].classList.add('questions-modal-wrapper--open');
             body.classList.add('oh');
-            body.style.marginRight = `${17}px`;
         });
     });
 
@@ -20,7 +19,6 @@
             modals[i].classList.remove('questions-modal--open');
             modalsWrap[i].classList.remove('questions-modal-wrapper--open');
             body.classList.remove('oh');
-            body.style.marginRight = `${0}px`;
         });
     });
     
