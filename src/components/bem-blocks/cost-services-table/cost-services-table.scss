@@ -1,4 +1,8 @@
 .cost-services-table {
+
+    & .container {
+        max-width: 96rem;
+    }
     padding: 6rem 0;
     &__title {
         color: #2a47b6;
@@ -38,6 +42,7 @@
         background-color: #eeeeee;
         border-top: 0.1rem solid #d9d9d9;
         border-bottom: 0.1rem solid #d9d9d9;
+        line-height: 1.55;
         div {
             display: block;
             text-align: center;

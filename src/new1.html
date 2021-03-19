@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Профессиональное лечение наркомании, алкоголизма и кодирование - Частный наркологический центр в Ижевске на Зимней',
+'description': 'Специалисты для лечения алкоголизма в наркологической клинике в Ижевске. Доступные цены на кодирования от алкоголизма и профессиональные врачи! Гарантия результата и медицинская лицензия деятельности. Звоните по тел. 8 (3412) 77-53-99',
+'keywords': 'Webdev, Gulp4, html, css, js, jquery',
+'favicon': 'img/favicon.ico'
+})
+
+<body>
+    @@include('components/page/_2_header.html')
+    <div class="main">
+        <section class="news-articles">
+            <div class="section-inner">
+                <section class="news">
+                    <h2 class="section__title section__title--news">Новости центра</h2>
+                    <div class="posts-list"><a href="#!">
+                            <article class="post">
+                                <div class="post__img"><img src="img/news-1.jpg" alt="Изображение к новости" width="280"
+                                        height="210"></div>
+                                <h3 class="post__title">Занятия в Малой группе проводит консультант по химической
+                                    зависимости</h3>
+                                <div class="post__description">В рамках мероприятия ребята, проходящие лечение в
+                                    заведении, зачитывают свои задания и разбирают их.</div>
+                                <div class="post__date">27.06.2020</div>
+                            </article>
+                        </a><a href="#!">
+                            <article class="post">
+                                <div class="post__img"><img src="img/news-2.jpg" alt="Изображение к новости" width="280"
+                                        height="210"></div>
+                                <h3 class="post__title">Мероприятие "Арт-Терапия"</h3>
+                                <div class="post__description">Проведено арт-терапевтическое упражнение "Герб группы".
+                                </div>
+                                <div class="post__date">27.06.2020</div>
+                            </article>
+                        </a><a href="#!">
+                            <article class="post">
+                                <div class="post__img"><img src="img/news-3.jpg" alt="Изображение к новости" width="280"
+                                        height="210"></div>
+                                <h3 class="post__title">Чаепитие</h3>
+                                <div class="post__description">Поздравили Сашу с Днём Рождения.</div>
+                                <div class="post__date">27.06.2020</div>
+                            </article>
+                        </a><a href="#!">
+                            <article class="post">
+                                <div class="post__img"><img src="img/news-4.jpg" alt="Изображение к новости" width="280"
+                                        height="210"></div>
+                                <h3 class="post__title">Мероприятие "Выписка" Азата</h3>
+                                <div class="post__description">На данном мероприятии Азат зачитывает свое последнее
+                                    задание в РЦ.</div>
+                                <div class="post__date">21.06.2020</div>
+                            </article>
+                        </a></div>
+                    <button class="btn btn--more">Показать еще</button>
+                </section>
+            </div>
+        </section>
+
+        @@include('components/bem-blocks/social-menu/_social-menu.html')
+    </div>
+    @@include('components/page/_3_footer.html')
+    @@include('components/page/_4_scripts.html')
+</body>
+
+</html>
