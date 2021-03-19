@@ -1,4 +1,8 @@
 .cost-services-table {
+
+    & .container {
+        max-width: 96rem;
+    }
     padding: 6rem 0;
     &__title {
         color: #2a47b6;
