@@ -1,12 +1,5 @@
 .prices {
-    padding-top: 6rem;
-}
-
-.person {
-     width: 5rem;
-     height: 4.5rem;
-     object-fit: contain;
-     object-position: center;
+    padding: 6rem 0 9.5rem 0;
 }
 
 .section-inner {
@@ -18,7 +11,7 @@
 
 .section__title {
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
     font-size: 3.6rem;
     line-height: 1.17;
     color: #2a47b6;
@@ -72,10 +65,10 @@
         min-height: 8rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
 
         @media (min-width: 1440px) {
-            min-height: 17rem;
+            min-height: 15rem;
         }
     }
 
@@ -123,11 +116,12 @@
     transform: rotate(-45deg);
     width: 21rem;
     display: block;
-    padding: 1rem 0;
+    padding: 1.5rem 0 0.5rem 0;
     text-align: center;
     color: #ff6b00;
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
     text-shadow: 0 .1rem .1rem rgba(0, 0, 0, 0.2);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
     background: #79D557;
@@ -180,7 +174,7 @@
 .price-card__warning-mark {
     font-size: 1.6rem;
     line-height: 1.15;
-    font-weight: 100;
+    font-weight: 400;
     color: #fff;
 }
 
@@ -211,7 +205,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-self: flex-start;
-    padding: 0 .5rem 0 1.5rem;
+    padding: 0 0 0 1.5rem;
+}
+
+.price-card__list-title {
+    font-weight: 400;
 }
 
 .price-card__list-item {
@@ -219,11 +217,11 @@
     text-indent: 1.5rem;
     font-size: 1.6rem;
     line-height: 1.15;
-    font-weight: 100;
+    font-weight: 400;
     color: #fff;
 
     @media (min-width: 1440px) {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     &::before {
@@ -270,8 +268,8 @@
         text-align: left;
         font-size: 1.6rem;
         line-height: 1.4;
-        font-weight: 100;
-        color: rgba(0,0,0,0.6);
+        font-weight: 400;
+        color: #000;
     }
 }
 
@@ -302,7 +300,7 @@
     padding: .65rem 2.52rem;
     margin-top: 2.5rem;
     line-height: 1.55;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 1.8rem;
     color: #fff;
     border-color: transparent;
@@ -335,4 +333,11 @@
         opacity: 1;
         transform: translateX(0) translateY(0) rotate(0deg)scale(1,1);
     }
+}
+
+.person,
+.clock,
+.doctor {
+    width: 5rem;
+    height: 5rem;
 }

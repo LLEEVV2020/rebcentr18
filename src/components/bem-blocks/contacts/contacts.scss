@@ -1,8 +1,8 @@
 .contacts {
-    padding-bottom: 4rem;
+    padding: 5rem 0 4rem 0;
 
     @media (min-width: 1440px) {
-        padding-bottom: 9rem;
+        padding: 8rem 0 9rem 0;
     }
 }
 
@@ -64,11 +64,11 @@
         }
 
         &-info {
-            font-weight: 100;
+            font-weight: 400;
 
             a {
                 font-size: 1.8rem;
-                font-weight: 100;
+                font-weight: 400;
                 line-height: 1.55;
                 color: #050505;
 
@@ -260,7 +260,7 @@
             margin-bottom: 3rem;
             font-size: 1.4rem;
             line-height: 1.55;
-            font-weight: 100;
+            font-weight: 400;
             color: #050505;
 
             @media (min-width: 961px) {
