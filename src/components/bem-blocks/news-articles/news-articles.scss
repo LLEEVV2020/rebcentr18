@@ -8,7 +8,6 @@
 
     .btn--more {
         width: 15rem;
-        margin: 0 auto;
         padding: 1.45rem 0;
         font-size: 1.6rem;
 
@@ -58,6 +57,7 @@
 .posts-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding-bottom: 9rem;
 
     @media (min-width: 1440px) {
@@ -118,7 +118,6 @@
             margin-bottom: 1.5rem;
             color: #050505;
             font-size: 1.2rem;
-            font-weight: 100;
             line-height: 1.55;
 
             @media (min-width: 1440px) {
