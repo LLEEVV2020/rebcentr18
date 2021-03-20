@@ -62,7 +62,7 @@
         margin-bottom: 1rem;
     }
 
-    &__input,
+    &__input-box,
     &__btn {
         max-width: 30rem;
         height: 7rem;
@@ -75,19 +75,44 @@
         }
     }
 
+    &__input-box {
+        width: 100%;
+        position: relative;
+        margin-right: 2rem;
+
+        &::after {
+            content: '+7';
+            position: absolute;
+            top: 51%;
+            transform: translateY(-50%);
+            left: 4.2rem;
+            font-weight: 500;
+            color: $black;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 1.5rem;
+            width: 1.8rem;
+            height: 1.3rem;
+            background: linear-gradient(white 0rem,white 0.45rem, blue 0.45rem, blue 0.9rem, red 0.9rem);
+            box-shadow:  0 0 0.5rem 0.1rem rgba(0,0,0,0.3);
+            z-index: 1;
+        }
+    }
+
     /* .banner-home__input */
 
     &__input {
         width: 100%;
+        height: 100%;
         border: none;
         padding: 1rem;
         border-radius: 0.5rem;
-        margin-right: 2rem;
-        padding-left: 6rem;
-
-        @include media(1200) {
-            padding-left: 4rem;
-        }
+        padding-left: 6.5rem;
     }
 
     /* .banner-home__anonymously */
