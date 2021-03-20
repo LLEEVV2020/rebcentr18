@@ -19,6 +19,12 @@
         width: 100%;
         padding: 0;
         li {
+            // СПРЯТАТЬ СОДЕРЖИМОЕ МОДАЛОК
+            div {
+                display: none;
+            }
+            //
+            cursor: pointer;
             display: block;
             display: flex;
             flex-direction: column;
@@ -108,77 +114,100 @@
         }
     }
 }
-/* Стили для модалки */
-.questions-modal {
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1050;
-    pointer-events: auto;
-    overflow-y: auto;
-    -webkit-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    font-family: "Raleway";
+
+.questions__title-blue {
+    color: #fff;
+}
+.questions-blue {
+    background-color: #2a47b6;
+    ul {
+        li {
+            background-color: rgb(255, 255, 255);
+        }
+    }
 }
 
-.questions-modal--open {
+.current-modal {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+	visibility: hidden;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease-in;
+
+    &--active {
+        visibility: visible;
+		opacity: 1;
+    }
+}
+
+/* Стили для модалки */
+.questions-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1500;
+    overflow-y: auto;
     background-color: #fff;
-    opacity: 1;
-    visibility: visible;
-    z-index: 20;
-    pointer-events: none;
-    -webkit-transition-duration: 0.6s;
-    transition-duration: 0.6s;
-    h6 {
+    transition: opacity 400ms ease-in;
+    animation: modal-open .5s ease-in-out;
+
+    h4 {
+        text-align: center;
         font-weight: 600;
         color: #050505;
         font-size: 2rem;
         margin: 2.5rem 0;
         line-height: 1.17;
-        font-family: "TTCommons", Arial, Helvetica, sans-serif;
     }
-    p {
-        font-family: "TTCommons", Arial, Helvetica, sans-serif;
+    div {
+        margin-top: 1.7rem;
+        text-align: center;
+        color: #050505;
+        font-size: 1.8rem;
+        font-weight: 100;
+        line-height: 1.55;
+
+        a {
+            margin: 4rem auto 0 auto;
+            width: 23.5rem;
+            transition: 0.8s;
+            padding: 1.55rem .5rem;
+            color: #ffffff;
+            border: .1rem solid #ff6b00;
+            background-color: #ff6b00;
+            display: block;
+            align-self: baseline;
+            border-radius: .5rem;
+            font-size: 1.4rem;
+            line-height: 1.4;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
     }
-}
 
-.questions-modal-wrapper {
-    position: fixed;
-    overflow: auto;
-    opacity: 0;
-    visibility: hidden;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    -webkit-transition: opacity 0.3s ease-in;
-    transition: opacity 0.3s ease-in;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding: 2rem 1rem !important;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    background: rgba(0, 0, 0, 0.5);
-
-    &--open {
-        opacity: 1;
-        visibility: visible;
-        z-index: 10;
+    &--close {
+        animation: modal-close .5s ease-in-out;
     }
 }
 
 .questions__close {
     width: 2rem;
     height: 2rem;
-    opacity: 1;
     background-image: url(../img/icon/closes.svg);
     background-size: cover;
     float: right;
@@ -213,7 +242,7 @@
 }
 @media (min-width: 1120px) {
     .questions-modal {
-        padding: 6rem !important;
+        padding: 4rem 4.5rem !important;
         width: 60%;
     }
     .questions__close {
@@ -224,5 +253,27 @@
 @media (min-width: 240px) {
     .questions-modal {
         width: 50%;
+    }
+}
+
+@keyframes modal-open {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes modal-close {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
     }
 }
