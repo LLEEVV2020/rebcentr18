@@ -115,15 +115,15 @@
     }
 }
 
-.questions__title-blue {
-    color: #fff;
-}
 .questions-blue {
     background-color: #2a47b6;
     ul {
         li {
             background-color: rgb(255, 255, 255);
         }
+    }
+    .questions__title {
+        color: #fff;
     }
 }
 
