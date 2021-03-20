@@ -1,5 +1,5 @@
 .signs {
-    padding: 6rem 0;
+    margin: 6rem 0;
     &__title {
         color: #2a47b6;
         line-height: 1.45;
@@ -43,7 +43,7 @@
 
 @media (max-width: 949px) {
     .signs {
-        padding: 6rem 0;
+        margin: 6rem 0;
         &__title {
             font-size: 3rem;
         }
@@ -62,7 +62,7 @@
 }
 @media (max-width: 768px) {
     .signs {
-        padding: 6rem 0;
+        margin: 6rem 0;
         ul {
             li {
                 padding-left: 4rem;
@@ -78,7 +78,7 @@
 }
 @media (max-width: 949px) {
     .signs {
-        padding: 6rem 0;
+        margin: 6rem 0;
         &__title {
             font-size: 2rem;
         }
