@@ -228,27 +228,27 @@ gulp.task('svg2sprite', () => {
 gulp.task('img', () => {
 	return gulp
 		.src('src/img/**/*.+(png|jpg|jpeg|gif|svg|ico|webp)')
-		.pipe(imagemin({
-				interlaced: true,
-				progressive: true,
-				optimizationLevel: 5,
-			},
-			[
-				recompress({
-					loops: 6,
-					min: 50,
-					max: 90,
-					quality: 'high',
-					use: [pngquant({
-						quality: [0.7, 0.9],
-						strip: true,
-						speed: 1
-					})],
-				}),
-				imagemin.gifsicle(),
-				imagemin.optipng(),
-				imagemin.svgo()
-			], ), )
+		// .pipe(imagemin({
+		// 		interlaced: true,
+		// 		progressive: true,
+		// 		optimizationLevel: 5,
+		// 	},
+		// 	[
+		// 		recompress({
+		// 			loops: 6,
+		// 			min: 50,
+		// 			max: 90,
+		// 			quality: 'high',
+		// 			use: [pngquant({
+		// 				quality: [0.7, 0.9],
+		// 				strip: true,
+		// 				speed: 1
+		// 			})],
+		// 		}),
+		// 		imagemin.gifsicle(),
+		// 		imagemin.optipng(),
+		// 		imagemin.svgo()
+		// 	], ), )
 		.pipe(gulp.dest('build/img'))
 		.pipe(size(settings_size))
 		.pipe(bs.stream())
