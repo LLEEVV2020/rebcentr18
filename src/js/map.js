@@ -10,7 +10,7 @@
             
             myMap = new ymaps.Map('map', {
                 center: [56.817656, 53.211194],
-                zoom: 8,
+                zoom: 16,
                 controls: ['zoomControl']
             });
 

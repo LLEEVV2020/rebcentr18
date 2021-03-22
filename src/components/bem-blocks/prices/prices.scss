@@ -70,6 +70,10 @@
         @media (min-width: 1440px) {
             min-height: 15rem;
         }
+
+        &--main{
+            justify-content: space-between; 
+        }
     }
 
     &__bottom {
