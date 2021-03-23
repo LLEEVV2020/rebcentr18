@@ -24,7 +24,7 @@
                 },{
                 iconLayout: 'default#image',
                 // Путь до нашей картинки
-                iconImageHref: './wp-content/themes/twentytwenty-child/img/logo.png', 
+                iconImageHref: '/wp-content/themes/narco-centr/assets/img/logo.png', 
                 // Размер по ширине и высоте
                 iconImageSize: [40, 47],
                 // Смещение левого верхнего угла иконки относительно
