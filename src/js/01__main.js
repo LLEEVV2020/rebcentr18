@@ -145,6 +145,14 @@
         });
     }
     
+    window.addEventListener('keydown', (e) => {
+        if (e.code === 'Escape') {
+            setTimeout(() => {
+                closeModal();
+            }, 400);
+        }
+    });
+
 })();
 
 // FAQ modals END
