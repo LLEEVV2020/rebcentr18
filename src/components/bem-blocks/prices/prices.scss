@@ -56,7 +56,6 @@
     }
 
     &--active {
-        animation: card-animate .1s linear forwards;
         backface-visibility: hidden;
         background: url(../img/card-violet.jpg) center/cover no-repeat,#9964e9 !important;
     }
