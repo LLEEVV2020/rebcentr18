@@ -21,6 +21,7 @@
         padding: 0;
 
         li {
+
             // СПРЯТАТЬ СОДЕРЖИМОЕ МОДАЛОК
             div {
                 display: none;
@@ -196,11 +197,13 @@
         font-size: 1.8rem;
         font-weight: 400;
         line-height: 1.55;
+
         a {
             color: #ff6b00;
             transition: 1.3s;
             width: auto;
             position: relative;
+
             &:after {
                 content: "";
                 position: absolute;
@@ -211,6 +214,7 @@
                 background-color: #ff6b00;
                 transition: width 0.4s ease-in-out;
             }
+
             &:hover:after {
                 width: 100%;
                 left: 0;
@@ -236,17 +240,20 @@
     top: 3rem;
     right: 3rem;
 }
-<<<<<<< HEAD =======>>>>>>>657fa2569584f89853a31d4abe0813df094fd042 @media (min-width: 240px) {
+
+@media (min-width: 240px) {
     .questions-modal {
         width: 90%;
         padding: 0 2rem 3rem 2rem;
     }
 }
-<<<<<<< HEAD =======>>>>>>>657fa2569584f89853a31d4abe0813df094fd042 @media (min-width: 640px) {
+
+@media (min-width: 640px) {
     .questions-modal {
         padding: 3rem;
         width: 70%;
-        <<<<<<< HEAD =======>>>>>>>657fa2569584f89853a31d4abe0813df094fd042 .questions__close {
+
+        .questions__close {
             top: 3rem;
         }
     }
