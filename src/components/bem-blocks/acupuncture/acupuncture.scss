@@ -6,12 +6,13 @@
     font-weight: 400;
     color: #fff;
 }
+
 .price-card.price-card--long {
     @media (min-width: 1440px) {
         width: 39rem;
     }
+
     .price-card__top {
-        min-height: 5.6rem;
-        margin: 5rem;
+        min-height: 5.6rem !important;
     }
 }
