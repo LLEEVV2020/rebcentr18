@@ -109,7 +109,7 @@
             left: 1.5rem;
             width: 1.8rem;
             height: 1.3rem;
-            background: linear-gradient(white 0rem,white 0.45rem, blue 0.45rem, blue 0.9rem, red 0.9rem);
+            background: linear-gradient(white 0,white 33%, blue 33%, blue 66%, red 100%);
             box-shadow:  0 0 0.5rem 0.1rem rgba(0,0,0,0.3);
             z-index: 1;
         }

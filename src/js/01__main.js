@@ -201,7 +201,22 @@
         }
 
     }
-
+    
 })();
 
+<<<<<<< HEAD
 
+=======
+;(function (){
+
+    if(document.querySelector('.banner-home__arrow')) {
+        const arrow = document.querySelector('.banner-home__arrow');
+        const target = document.querySelector('.prices');
+      
+        arrow.addEventListener('click', (e) => {
+            target.scrollIntoView(false);
+        });
+    }
+
+})();
+>>>>>>> 52e0f612b0953c4374b98be86b8ae59e6fdd5a25
