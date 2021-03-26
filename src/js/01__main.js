@@ -87,14 +87,14 @@
 
 // FAQ modals START
 
-;(function () {
-    
+; (function () {
+
     if (document.querySelector('.questions')) {
         const questions = document.querySelectorAll('.questions ul li');
         const body = document.getElementsByTagName('body')[0];
         let modal = '';
         let div = document.createElement('div');
-            div.classList.add('current-modal');
+        div.classList.add('current-modal');
 
         questions.forEach(question => {
             question.addEventListener('click', () => {
@@ -125,7 +125,7 @@
             body.removeChild(div);
             body.classList.remove('oh')
         }
-    
+
         window.addEventListener('click', (e) => {
             if (e.target.classList.contains('questions__close')) {
                 document.querySelector('.questions-modal').classList.add('questions-modal--close');
@@ -144,7 +144,7 @@
             }
         });
     }
-    
+
     window.addEventListener('keydown', (e) => {
         if (e.code === 'Escape') {
             setTimeout(() => {
@@ -157,16 +157,16 @@
 
 // FAQ modals END
 
-;(function (){
+; (function () {
 
-    if(document.getElementById('map')) {
+    if (document.getElementById('map')) {
 
         ymaps.ready(init);
 
         let myMap;
 
-        function init(){    
-            
+        function init() {
+
             myMap = new ymaps.Map('map', {
                 center: [56.817656, 53.211194],
                 zoom: 16,
@@ -178,28 +178,30 @@
             myMap.behaviors.disable('scrollZoom');
             myMap.behaviors.enable('drag');
 
-            myGeoObjects = new ymaps.Placemark([56.817656, 53.211194],{
+            myGeoObjects = new ymaps.Placemark([56.817656, 53.211194], {
                 balloonContentBody: 'Частный наркологический центр',
-                },{
+            }, {
                 iconLayout: 'default#image',
                 // Путь до нашей картинки
-                iconImageHref: '/wp-content/themes/narco-centr/assets/img/logo.png', 
+                iconImageHref: '/wp-content/themes/narco-centr/assets/img/logo.png',
                 // Размер по ширине и высоте
                 iconImageSize: [40, 47],
                 // Смещение левого верхнего угла иконки относительно
                 // её «ножки» (точки привязки).
                 iconImageOffset: [-40, -60]
             });
-            
+
             let clusterer = new ymaps.Clusterer({
                 clusterDisableClickZoom: false,
                 clusterOpenBalloonOnClick: false,
             });
-            
+
             clusterer.add(myGeoObjects);
-            myMap.geoObjects.add(clusterer);   
+            myMap.geoObjects.add(clusterer);
         }
 
     }
 
 })();
+
+
