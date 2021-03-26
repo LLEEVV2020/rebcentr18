@@ -201,15 +201,15 @@
         }
 
     }
-    
+
 })();
 
-;(function (){
+; (function () {
 
-    if(document.querySelector('.banner-home__arrow')) {
+    if (document.querySelector('.banner-home__arrow')) {
         const arrow = document.querySelector('.banner-home__arrow');
         const target = document.querySelector('.prices');
-      
+
         arrow.addEventListener('click', (e) => {
             target.scrollIntoView(false);
         });
