@@ -59,6 +59,9 @@
 
         @include media(574) {
             height: 28rem;
+            &::after {
+                background: linear-gradient(0deg, rgba(248, 250, 249, 1) 16%, rgba(249, 251, 250, 0) 75%, rgba(255, 255, 255, 0) 100%);
+            }
         }
     }
 
@@ -96,7 +99,7 @@
 
         @include media(574) {
             font-size: 2rem;
-            margin-bottom: 20rem;
+            margin-bottom: 13rem;
         }
     }
 
