@@ -87,7 +87,8 @@ button {
 }
 
 .fslightbox-open {
-    padding-right: 1.7rem;
+    // padding-right: 1.7rem;
+    overflow: initial !important;
 
     @include media(960px) {
         padding-right: 0;

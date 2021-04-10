@@ -92,6 +92,8 @@
     if (document.querySelector('.questions')) {
         const questions = document.querySelectorAll('.questions ul li');
         const body = document.getElementsByTagName('body')[0];
+        const header = document.querySelector('.header__scroll');
+
         let modal = '';
         let div = document.createElement('div');
             div.classList.add('current-modal');
@@ -117,13 +119,15 @@
             div.innerHTML = modal;
             body.appendChild(div);
             body.classList.add('oh');
+            header.classList.add('oh');
         }
 
         function closeModal() {
             modal = '';
             div.innerHTML = modal;
             body.removeChild(div);
-            body.classList.remove('oh')
+            body.classList.remove('oh');
+            header.classList.remove('oh');
         }
     
         window.addEventListener('click', (e) => {
@@ -203,3 +207,4 @@
     }
 
 })();
+
